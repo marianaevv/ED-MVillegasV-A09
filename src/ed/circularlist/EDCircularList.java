@@ -21,7 +21,7 @@ public class EDCircularList {
         list.insert(7);
         
         list.showList();
-  
+  list.searchNode(5);
   list.eNODE(8);
     
     
