@@ -83,32 +83,7 @@ nodeClass aux;//declaramos dos variables auxiliares tipo nodeDL para guardar los
 
     }
 
-    public void eNODE(T data) {
-
-        if (pivot != null) {
-            nodeClass aux = pivot;
-            nodeClass prev = null;
-            while (aux.next != pivot && aux.data != data) {
-                      aux = aux.next;
-            }
-            if (prev == null) {
-                pivot = pivot.next;
-                aux = null;
-                aux = pivot;
-
-                while (aux.next != pivot) {
-                    prev = aux;
-                    aux = aux.next;
-                }
-                prev.next = pivot;
-            } else {
-                prev.next = aux.next;
-                aux = null;
-            }
-        }
     
-
-    }
     public void eNode(T data){
         nodeClass aux;
         aux = pivot;
